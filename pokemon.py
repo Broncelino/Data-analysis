@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('./Pokemon.csv')
+df = pd.read_csv('applied\Data-analysis\Pokemon.csv')
 pd.set_option('display.max_rows', 20)
 #print(df.columns)
 #print(df['Name'][0:5]) just names of index 1-5
@@ -87,12 +87,12 @@ def genTotals():
         print("Gen {0}: {1}".format(i,avg))
 
 #print(df)
-#avgStats()
-#mostLegendaries()
-#mostpokemon()
-#typeTotals()
-#genTotals()
+avgStats()
+mostLegendaries()
+mostpokemon()
+typeTotals()
+genTotals()
 
-print(df.loc[(df['Type 1'] == 'Grass') | (df['Type 2'] == 'Grass')])
+#print(df.loc[(df['Type 1'] == 'Grass') | (df['Type 2'] == 'Grass')])
 #df['BST'] = df.iloc[:, 4:10].sum(axis=1)
 #print(round(df['BST'].mean(),2))
